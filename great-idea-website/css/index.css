@@ -64,8 +64,10 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-/* Elements */
-
+	/* elements */
+	h2{
+		color:teal;
+	}
 
 /* header elements */
 	/* nav elements */
@@ -99,6 +101,9 @@ h1, h2, h3, h4, h5 {
 		.header-and-button span{
 			display:block;
 		}
+		.header-and-button span:nth-of-type(even){
+			color:teal;
+		}
 		.button{
 			background-color:white;
 			border: .5px black solid;
@@ -109,6 +114,7 @@ h1, h2, h3, h4, h5 {
 		}
 		.landing-img{
 			position:relative;
+			
 			left:15em;top:2em;
 		}
 /* ************************ */
