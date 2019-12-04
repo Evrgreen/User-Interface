@@ -54,38 +54,54 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
+
 
 /* Your code starts here! */
+	/* Variables and body */
+	:root{
+		/* color */
+		--color-primary:#63498D;
+		--color-secondary: #e8d5b5;
+		--color-accent:#6CA1B5;
+		/* font */
+		--primary-font: "Merriweather Sans";
+	}
+	body{
+		background-image: url("img/mid-page-accent.jpg")
+		font-family:var(--primary-font);
+		background-color: var(--color-secondary);
+	}
+	
 	/* elements */
 	h2{
-		color:teal;
+		color: var(--color-secondary);
 	}
 
 /* header elements */
 	/* nav elements */
 		header nav{
+			background-color:var(--color-accent);
 			font-size:1.2em;
 			padding:1vh;
 			text-align:right;
 		}
-		header nav *{
+		header nav a, header nav img{
 			margin: 0 3vw;
 		}
 		header nav a{
-			color:grey;
+			color:var(--color-secondary);
 			text-decoration:none;
 		}
 			
 	/* header landing */
 		.landing{
+			background-image: url("../img/mid-page-accent.jpg");
+			
+			background-size:cover;
+			
 			position:relative;
 			padding: 4em 0;
 		}
@@ -99,16 +115,22 @@ h1, h2, h3, h4, h5 {
 			width:50vw;
 		}	
 		.header-and-button span{
+			color:var(--color-secondary);
 			display:block;
+			font-family:"Merriweather Sans";
+			font-weight:800;
 		}
 		.header-and-button span:nth-of-type(even){
-			color:teal;
+			color:var(--color-accent);
+			font-size:.5em;
 		}
-		.button{
-			background-color:white;
-			border: .5px black solid;
-			border-radius:.3em;
-			margin-bottom:2.3em;
+		.header-and-button .button{
+			color:var(--color-primary);
+			background-color:var(--color-accent);
+			border: 4px var(--color-secondary) solid;
+			border-radius:3em;
+			font-weight:800;
+			margin:2em 0 2.3em;
 			padding: 1em 3em;
 			
 		}
@@ -133,7 +155,6 @@ h1, h2, h3, h4, h5 {
 		}	
 		.features-about-block .about{
 			border-left:5px teal solid;
-
 			position:relative;
 			left:7.5%;
 			text-align:right;
