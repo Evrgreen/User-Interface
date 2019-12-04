@@ -70,7 +70,7 @@ html, body {
 		--primary-font: "Merriweather Sans";
 	}
 	body{
-		background-image: url("img/mid-page-accent.jpg")
+	
 		font-family:var(--primary-font);
 		background-color: var(--color-secondary);
 	}
@@ -85,25 +85,29 @@ html, body {
 		header nav{
 			background-color:var(--color-accent);
 			font-size:1.2em;
+			position:fixed;
 			padding:1vh;
 			text-align:right;
+			width:100%;
+			z-index: 10;
 		}
 		header nav a, header nav img{
 			margin: 0 3vw;
 		}
 		header nav a{
+			border:4px red solid;
+			
 			color:var(--color-secondary);
 			text-decoration:none;
+			z-index:100000;
 		}
 			
 	/* header landing */
 		.landing{
 			background-image: url("../img/mid-page-accent.jpg");
-			
 			background-size:cover;
-			
-			position:relative;
 			padding: 4em 0;
+			position:relative;
 		}
 		.landing > div{
 			display:inline-block;
@@ -112,6 +116,7 @@ html, body {
 		.header-and-button{
 			font-size:5rem;
 			text-align:center;
+			margin:5%;
 			width:50vw;
 		}	
 		.header-and-button span{
@@ -134,11 +139,7 @@ html, body {
 			padding: 1em 3em;
 			
 		}
-		.landing-img{
-			position:relative;
-			
-			left:15em;top:2em;
-		}
+	
 /* ************************ */
 
 /* Main Content */
