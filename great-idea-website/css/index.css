@@ -64,3 +64,130 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+/* Elements */
+
+
+/* header elements */
+	/* nav elements */
+		header nav{
+			font-size:1.2em;
+			padding:1vh;
+			text-align:right;
+		}
+		header nav *{
+			margin: 0 3vw;
+		}
+		header nav a{
+			color:grey;
+			text-decoration:none;
+		}
+			
+	/* header landing */
+		.landing{
+			position:relative;
+			padding: 4em 0;
+		}
+		.landing > div{
+			display:inline-block;
+			
+		}
+		.header-and-button{
+			font-size:5rem;
+			text-align:center;
+			width:50vw;
+		}	
+		.header-and-button span{
+			display:block;
+		}
+		.button{
+			background-color:white;
+			border: .5px black solid;
+			border-radius:.3em;
+			margin-bottom:2.3em;
+			padding: 1em 3em;
+			
+		}
+		.landing-img{
+			position:relative;
+			left:15em;top:2em;
+		}
+/* ************************ */
+
+/* Main Content */
+	.main-content{
+		border-top: 4px solid teal;
+		margin:2em 6em;
+		padding-top: 3em;
+	}
+	/* feature and about section */
+		.features-about-block div{
+			display:inline-block;
+			width:40vw;
+			padding-top:1.5em;
+		}	
+		.features-about-block .about{
+			border-left:5px teal solid;
+
+			position:relative;
+			left:7.5%;
+			text-align:right;
+		}
+		.features-about-block .features{
+			border-right:5px teal solid;
+
+		}
+		.features-about-block h2{
+			font-size:2em;
+			padding:1.3em 0;
+		}
+		.features-about-block p{
+			font-size:1.3em;
+			line-height:1.2em;
+			padding-bottom:2em;
+		}
+	/* Main content Image */
+		.middle-img{
+			padding:2em 0;
+			width:100%;
+		}
+
+	/* Services, products, vision section */
+		.services-product-vision-block{
+			border-bottom: 5px solid teal;
+			padding: 0 2em 2em 0;
+		}
+		.services-product-vision-block div{
+			
+			display:inline-block;
+			width:25vw;
+			line-height:1.4em;
+		}
+		.services-product-vision-block h2{
+			font-size:2em;
+		}
+		.services-product-vision-block .vision{
+			
+			left:13%;
+			position:relative;
+			text-align: end;
+		}
+		.services-product-vision-block .product{
+			border-left:5px teal solid;
+			border-right:5px teal solid;
+			left:7%;
+			padding:1.3em;
+			position:relative;
+			text-align:center;
+		}
+	/* contact section */
+		.contact{
+			padding:2em;
+			font-size:1.3em;
+		}
+		.contact li{
+			line-height:2em;
+		}
+	/* footer */
+		footer{
+			text-align:center;
+		}
