@@ -54,13 +54,168 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
+
 
 /* Your code starts here! */
+	/* Variables and body */
+	:root{
+		/* color */
+		--color-primary:#63498D;
+		--color-secondary: #e8d5b5;
+		--color-accent:#6CA1B5;
+		/* font */
+		--primary-font: "Merriweather Sans";
+	}
+	body{
+	
+		font-family:var(--primary-font);
+		background-color: var(--color-secondary);
+	}
+	
+	/* elements */
+	h2{
+		color: var(--color-secondary);
+	}
+
+/* header elements */
+	/* nav elements */
+		header nav{
+			background-color:var(--color-accent);
+			font-size:1.2em;
+			position:fixed;
+			padding:1vh;
+			text-align:right;
+			width:100%;
+			z-index: 10;
+		}
+		header nav a, header nav img{
+			margin: 0 3vw;
+		}
+		header nav a{
+			border:4px red solid;
+			
+			color:var(--color-secondary);
+			text-decoration:none;
+			z-index:100000;
+		}
+			
+	/* header landing */
+		.landing{
+			background-image: url("../img/mid-page-accent.jpg");
+			background-size:cover;
+			padding: 4em 0;
+			position:relative;
+		}
+		.landing > div{
+			display:inline-block;
+			
+		}
+		.header-and-button{
+			font-size:5rem;
+			text-align:center;
+			margin:5%;
+			width:50vw;
+		}	
+		.header-and-button span{
+			color:var(--color-secondary);
+			display:block;
+			font-family:"Merriweather Sans";
+			font-weight:800;
+		}
+		.header-and-button span:nth-of-type(even){
+			color:var(--color-accent);
+			font-size:.5em;
+		}
+		.header-and-button .button{
+			color:var(--color-primary);
+			background-color:var(--color-accent);
+			border: 4px var(--color-secondary) solid;
+			border-radius:3em;
+			font-weight:800;
+			margin:2em 0 2.3em;
+			padding: 1em 3em;
+			
+		}
+	
+/* ************************ */
+
+/* Main Content */
+	.main-content{
+		border-top: 4px solid teal;
+		margin:2em 6em;
+		padding-top: 3em;
+	}
+	/* feature and about section */
+		.features-about-block div{
+			display:inline-block;
+			width:40vw;
+			padding-top:1.5em;
+		}	
+		.features-about-block .about{
+			border-left:5px teal solid;
+			position:relative;
+			left:7.5%;
+			text-align:right;
+		}
+		.features-about-block .features{
+			border-right:5px teal solid;
+
+		}
+		.features-about-block h2{
+			font-size:2em;
+			padding:1.3em 0;
+		}
+		.features-about-block p{
+			font-size:1.3em;
+			line-height:1.2em;
+			padding-bottom:2em;
+		}
+	/* Main content Image */
+		.middle-img{
+			padding:2em 0;
+			width:100%;
+		}
+
+	/* Services, products, vision section */
+		.services-product-vision-block{
+			border-bottom: 5px solid teal;
+			padding: 0 2em 2em 0;
+		}
+		.services-product-vision-block div{
+			
+			display:inline-block;
+			width:25vw;
+			line-height:1.4em;
+		}
+		.services-product-vision-block h2{
+			font-size:2em;
+		}
+		.services-product-vision-block .vision{
+			
+			left:13%;
+			position:relative;
+			text-align: end;
+		}
+		.services-product-vision-block .product{
+			border-left:5px teal solid;
+			border-right:5px teal solid;
+			left:7%;
+			padding:1.3em;
+			position:relative;
+			text-align:center;
+		}
+	/* contact section */
+		.contact{
+			padding:2em;
+			font-size:1.3em;
+		}
+		.contact li{
+			line-height:2em;
+		}
+	/* footer */
+		footer{
+			text-align:center;
+		}
